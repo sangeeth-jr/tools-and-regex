@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome</title>
+
+    <style>
+      body {
+        background-color: #37260f;
+        color: white;
+        text-align: center;
+        justify-content: center; /* horizontal center */
+        align-items: center;
+        font-family: Arial;
+      }
+
+      h1 {
+        color: #f08e1e;
+      }
+
+      input {
+        padding: 10px;
+        width: 200px;
+      }
+
+      button {
+        background-color: #e8820e;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome</h1>
+
+    <p>Please enter your name to receive a greeting.</p>
+
+    <form action="/submit" method="POST">
+      <input
+        type="text"
+        name="username"
+        placeholder="Enter your name"
+        required
+      />
+      <br /><br />
+      <button type="submit">Get Greeting</button>
+    </form>
+  </body>
+</html>
